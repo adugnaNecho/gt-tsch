@@ -1,0 +1,10 @@
+
+THESE PARAMETERS ARE REALLYIMPORTANT
+
+#define SIXTOP_MAX_TRANSACTIONS 4
+
+#define RPL_CONF_DIO_INTERVAL_MIN 4
+
+
+Number of initial slots in minimal schedule function is really important, less tahn 6 number can rise exception.
+

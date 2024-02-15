@@ -1,0 +1,22 @@
+o use Orchestra, add a couple global definitions, e.g in your project-conf.h file.
+
+Disable 6TiSCH minimal schedule:
+
+#define TSCH_SCHEDULE_CONF_WITH_6TISCH_MINIMAL 0
+
+Enable TSCH link selector (allows Orchestra to assign TSCH links to outgoing packets):
+
+#define TSCH_CONF_WITH_LINK_SELECTOR 1
+
+Set up the following callbacks:
+
+#define TSCH_CALLBACK_NEW_TIME_SOURCE orchestra_callback_new_time_source
+#define TSCH_CALLBACK_PACKET_READY orchestra_callback_packet_ready
+#define NETSTACK_CONF_ROUTING_NEIGHBOR_ADDED_CALLBACK orchestra_callback_child_added
+#define NETSTACK_CONF_ROUTING_NEIGHBOR_REMOVED_CALLBACK orchestra_callback_child_removed
+To use Orchestra, fist add it to your makefile APPS with APPS += orchestra.
+
+Finally:
+
+add Orchestra to your makefile APPS with APPS += orchestra;
+start Orchestra by calling orchestra_init() from your application, after including #include "orchestra.h".

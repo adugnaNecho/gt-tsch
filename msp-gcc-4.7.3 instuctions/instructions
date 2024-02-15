@@ -1,0 +1,54 @@
+MSP-gcc-problem in Cooja:
+
+1. remove the current msp-gcc by:
+sudo apt-get remove gcc-msp430
+sudo apt-get autoremove gcc-msp430
+
+2. install gcc-4.7 by:
+sudo apt-get install gcc-4.7
+
+3. go to /opt by: 
+cd /opt/
+
+4. make a compiler directory by:
+sudo mkdir compiler
+ 
+
+5. go to the following link and download  msp430-gcc-4.7.3-master.zip by:
+https://github.com/pksec/msp430-gcc-4.7.3
+
+6. unzip msp430-gcc-4.7.3-master.zip by:
+sudo unzip msp430-gcc-4.7.3-master.zip -d /opt/compiler/
+
+7. go to opt/compiler/msp430-gcc-4.7.3-master/ by:
+cd /opt/compiler/msp430-gcc-4.7.3-master/
+
+8. extract mspgcc-4.7.3.tar.bz2 by:
+sudo tar -xf mspgcc-4.7.3.tar.bz2
+
+9. Move the extracted file to compiler folder by:
+sudo mv mspgcc-4.7.3 /opt/compiler/
+
+10. remove the other folder by:
+sudo rm -d -r msp430-gcc-4.7.3-master
+
+11. sudo gedit $HOME/.bashrc
+
+12.add the following line at the end of .bashrc
+export PATH=$PATH:/opt/compiler/mspgcc-4.7.3/bin
+
+13. add the address to the path variable by:
+PATH=$PATH:/opt/compiler/mspgcc-4.7.3/bin
+
+14. check the path variable by: 
+echo $PATH
+
+you should be sure the path to other gcc version is not set in PATH variable
+
+15. restart your system
+
+16. after doing these steps, get your contiki os from git hub.
+
+15. go to the main folder of contiki and delete all the .o files
+
+16. if still gets error replace the arch folder of contiki-dtsf into your project

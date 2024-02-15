@@ -1,0 +1,28 @@
+﻿Running on zolerita firefly
+
+1. Copy the sky folder to the application folder
+
+2. sudo make TARGET=zoul BOARD=firefly  udp-server.upload && sudo sky/serialdump-linux -b115200 /dev/ttyUSB1
+
+
+3. if serialdump-linux cannot be find, then you need to ho the the sky folder of older contiki version (mara) and make it by running "make". Then copy "serialdump-linux" file to the sky folder in here.
+
+
+4. sudo apt-get install python3-serial 
+
+
+5. In order to set python 3 as default, you need to run 
+
+sudo apt-get install python-is-python3
+ 
+
+2. sudo make TARGET=zoul BOARD=firefly  udp-server.upload && sudo sky/serialdump-linux -b115200 /dev/ttyUSB0
+
+ 
+6. for checking USB name (ttyUSB1), go to 
+
+cd ~
+cd ..
+cd ..
+cd dev
+ls

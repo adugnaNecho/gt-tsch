@@ -1,0 +1,122 @@
+# Position data for simulation of WSN nodes
+# Automatically generated
+# Version: 0.10, 2012-may-02
+# Author: Marcus Lundén, SICS
+# email: marcus.lunden@gmail.com
+#
+# Model used: Random Waypoint model
+# Number of nodes: 4
+# Time [s]: 600.0 seconds
+# Min speed [m/s]: 2.0
+# Max speed [m/s]: 3.0
+# Min pause time [s]: 1.0
+# Max pause time [s]: 3.0
+# Currently disregarding the first 100.0 seconds
+# Resolution [s]: 0.4
+# Maximum X-size [m]: 180.0
+# Maximum Y-size [m]: 180.0
+#
+#==========================================
+
+
+ Connectivity matrix at simulation start.
+Node with lowest index is in the top left corner.
+Legend: 2 means IN range, 1 means Interference range, 0 means out of range.
+Eg. [1][3]==2 means that nodes 1 and 3 are in range of eachother.
+
+#NONODES: 4
+
+#CONNSTART
+[[0 0 2 2]
+ [0 0 0 2]
+ [0 0 0 2]
+ [0 0 0 0]]
+#CONNEND
+
+
+#STATSTART
+7.2		2	4   OUT OF range
+20.4		1	4   OUT OF range
+25.2		3	4   OUT OF range
+28.0		2	3   IN range
+41.2		1	2   IN range
+49.2		1	3   OUT OF range
+65.2		2	3   OUT OF range
+75.6		1	2   OUT OF range
+77.2		1	2   IN range
+128.0		2	4   IN range
+129.2		1	2   OUT OF range
+138.0		1	3   IN range
+140.0		3	4   IN range
+141.2		2	4   OUT OF range
+150.4		3	4   OUT OF range
+159.2		1	3   OUT OF range
+184.0		1	3   IN range
+187.2		2	4   IN range
+198.8		1	2   IN range
+202.8		2	3   IN range
+205.2		1	4   IN range
+208.8		3	4   IN range
+222.0		1	2   OUT OF range
+224.8		2	4   OUT OF range
+228.0		1	3   OUT OF range
+228.4		3	4   OUT OF range
+228.8		2	3   OUT OF range
+234.0		2	3   IN range
+238.0		1	4   OUT OF range
+244.4		2	4   IN range
+273.6		2	4   OUT OF range
+278.4		1	2   IN range
+281.6		2	3   OUT OF range
+314.4		1	2   OUT OF range
+314.4		3	4   IN range
+338.4		3	4   OUT OF range
+342.0		1	4   IN range
+346.0		2	4   IN range
+353.6		1	4   OUT OF range
+362.4		1	2   IN range
+366.8		2	4   OUT OF range
+381.6		2	3   IN range
+388.0		1	3   IN range
+409.6		1	3   OUT OF range
+416.4		2	3   OUT OF range
+419.6		2	4   IN range
+422.8		1	4   IN range
+456.0		1	4   OUT OF range
+458.0		2	4   OUT OF range
+460.8		1	2   OUT OF range
+480.0		2	3   IN range
+490.8		2	3   OUT OF range
+504.4		1	2   IN range
+518.0		1	4   IN range
+523.2		2	4   IN range
+535.6		1	4   OUT OF range
+541.6		2	4   OUT OF range
+554.8		3	4   IN range
+555.2		1	2   OUT OF range
+586.0		2	3   IN range
+595.2		1	4   IN range
+595.2		2	4   IN range
+599.6		1	4   OUT OF range
+#STATEND
+
+ Connectivity matrix at simulation end.
+[[0 0 0 0]
+ [0 0 2 2]
+ [0 0 0 2]
+ [0 0 0 0]]
+
+  
+
+Node		 Avg speed [m/s]	 Max speed[m/s]		 Travel[m]
+====================================================================
+	1		 2.06				 2.98 				 1444.94 
+	2		 1.96				 2.95 				 1370.21 
+	3		 2.17				 2.97 				 1520.67 
+	4		 2.05				 2.98 				 1432.17 
+
+
+Maximum travel by node: 3
+Distance: 1520.67 [m]. AvgSpeed: 2.17 [m/s].
+Minimum travel by node: 2
+Distance: 1370.21 [m]. AvgSpeed: 1.96 [m/s].
